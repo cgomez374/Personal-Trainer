@@ -454,6 +454,75 @@ li a {
     }
 }
 
+@media screen and (max-width: 557px) {
+    .banner {
+        width: 90%;
+    }
+
+    .banner .title {
+        font-size: 40px;
+        width: 85%;
+    }
+
+    .banner p {
+        font-size: 25px;
+    }
+
+    .banner .btn {
+        font-size: 15px;
+    }
+
+    .services {
+        width: 100%;
+    }
+
+    .programs h2, .gallery h2, .details h2 {
+        font-size: 30px;
+    }
+
+    .services-card {
+        width: 100%;
+    }
+
+    .about-me h2 {
+        font-size: 25px;
+        width: 80%;
+    }
+
+    .about-me-content {
+        width: 100%;
+    }
+
+    .personal-img {
+        width: 100%;
+    }
+
+    .about-me img {
+        width: 900px;
+    }
+
+    .about-me-text {
+        width: 85%;
+    }
+
+    .gallery {
+        width: 100%;
+        text-align: center;
+    }
+
+    .details-content {
+        width: 100%;
+    }
+
+    .details-content p {
+        font-size: 13px;
+    }
+
+    .btn {
+        font-size: 15px;
+    }
+}
+
 
 
 
