@@ -8,6 +8,10 @@ hamMenu.addEventListener('click', function(){
     nav.classList.toggle('showNav');
 });
 
+hamMenu.addEventListener('touch', function(){
+    nav.classList.toggle('showNav');
+});
+
 nav.addEventListener('click', function(){
     nav.classList.toggle('showNav');
 });
