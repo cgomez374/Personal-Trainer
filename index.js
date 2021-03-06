@@ -1,3 +1,6 @@
+window.alert('Your screen res is ' + screen.width);
+
+
 //variables
 const hamMenu = document.getElementById('ham');
 const nav = document.getElementById('navMenu');
@@ -9,10 +12,7 @@ hamMenu.addEventListener('click', function(){
 });
 
 hamMenu.addEventListener('touchstart', function(){
-    nav.classList.add('showNav');
-    hamMenu.addEventListener('touchcancel', function(){
-        nav.classList.remove('showNav');
-    });
+    nav.classList.toggle('showNav');
 });
 
 nav.addEventListener('click', function(){
