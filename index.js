@@ -7,13 +7,16 @@ const nav = document.getElementById('navMenu');
 const showcase = document.querySelector('#showcase');
 
 //event listener
-hamMenu.addEventListener('click', function(){
-    nav.classList.toggle('showNav');
-});
-
-hamMenu.addEventListener('touchstart', function(){
-    nav.classList.toggle('showNav');
-});
+if(screen.width >= 1024){
+    hamMenu.addEventListener('click', function(){
+        nav.classList.toggle('showNav');
+    });
+}
+else{
+    hamMenu.addEventListener('touchstart', function(){
+        nav.classList.toggle('showNav');
+    });
+}
 
 nav.addEventListener('click', function(){
     nav.classList.toggle('showNav');
