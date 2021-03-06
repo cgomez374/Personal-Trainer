@@ -8,7 +8,7 @@ hamMenu.addEventListener('click', function(){
     nav.classList.toggle('showNav');
 });
 
-hamMenu.addEventListener('touch', function(){
+hamMenu.addEventListener('touchstart', function(){
     nav.classList.add('showNav');
     hamMenu.addEventListener('touchcancel', function(){
         nav.classList.remove('showNav');
