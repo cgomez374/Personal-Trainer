@@ -2,7 +2,6 @@
 const hamMenu = document.getElementById('ham');
 const nav = document.getElementById('navMenu');
 const showcase = document.querySelector('#showcase');
-let i = 1;
 
 //event listener
 hamMenu.addEventListener('click', function(){
@@ -22,18 +21,16 @@ nav.addEventListener('click', function(){
 
 // slideshow for showcase
 function slideShow() {
+    let i = Math.floor(Math.random() * 3) + 1;
+    console.log(i);
     if(i > 0) {
         showcase.style.backgroundImage = `url("./images/slideshow/slideshow${i}.jpg")`;
     }
-
-    if(i >= 3){
-        i = 0;
-    }
-
-    i++;
 }
 
 setInterval(() => {
     slideShow() 
-}, 3000);
+}, 4000);
+
+window.onload = slideShow();
 
