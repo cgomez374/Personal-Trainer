@@ -74,6 +74,7 @@ li a {
     text-transform: capitalize;
     font-weight: bold;
     letter-spacing: 2px;
+    cursor: pointer;
 }
 
 .link a:hover, .social-media a:hover {
@@ -86,6 +87,11 @@ li a {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    cursor: pointer;
+}
+
+.hamburger-menu {
+    display: none;
 }
 
 .showcase {
@@ -485,7 +491,37 @@ li a {
 
 @media screen and (max-width: 660px) {
     .links {
-        display: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100vh;
+        background: black;
+        color: white;
+        transform: translateY(-100%);
+        transition: transform 0.2s;
+        padding-top: 1rem;
+        opacity: 80%;
+    }
+
+    .showNav {
+        transform: translateY(0);
+      }
+
+    .nav {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .hamburger-menu {
+        display: inline-block;
+        cursor: pointer;
+        z-index: 100;
     }
     .banner {
         width: 100%;
