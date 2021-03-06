@@ -35,5 +35,5 @@ function slideShow() {
 
 setInterval(() => {
     slideShow() 
-}, 4000);
+}, 3000);
 
