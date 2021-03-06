@@ -1,6 +1,3 @@
-window.alert('Your screen res is ' + screen.width);
-
-
 //variables
 const hamMenu = document.getElementById('ham');
 const nav = document.getElementById('navMenu');
