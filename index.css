@@ -520,7 +520,8 @@ li a {
 
     .nav {
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-between;
+        padding: 0 18px;
     }
 
     .hamburger-menu {
