@@ -22,7 +22,7 @@ nav.addEventListener('click', function(){
 // slideshow for showcase
 function slideShow() {
     let i = Math.floor(Math.random() * 3) + 1;
-    console.log(i);
+    // console.log(i);
     if(i > 0) {
         showcase.style.backgroundImage = `url("./images/slideshow/slideshow${i}.jpg")`;
     }
