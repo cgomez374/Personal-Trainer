@@ -95,7 +95,7 @@ li a {
 }
 
 .showcase {
-    background-image: url('./images/services.jpg');
+    background-image: url('./images/slideshow/slideshow1.jpg');
     width: 100%;
     height: 780px;
     background-position: center;
@@ -105,6 +105,7 @@ li a {
     align-items: center;
     justify-content: center;
     padding: 0px;
+    transition: ease 3s;
 }
 
 .banner {
